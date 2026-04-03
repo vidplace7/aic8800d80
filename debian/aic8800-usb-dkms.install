@@ -1,0 +1,4 @@
+#!/usr/bin/dh-exec
+
+drivers/aic8800 usr/src/aic8800-usb-${DEB_VERSION}/
+modprobe/aic8800-bt.conf /etc/modprobe.d/

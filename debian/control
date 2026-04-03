@@ -1,0 +1,33 @@
+Source: aic8800
+Maintainer: "Shen Mintao" <shenmintao@gmail.com>
+Section: misc
+Priority: optional
+Standards-Version: 4.6.0
+Build-Depends: debhelper-compat (= 13),
+               devscripts,
+               dh-exec,
+               dh-sequence-dkms,
+               lintian,
+
+Package: aic8800-usb-dkms
+Architecture: all
+Section: misc
+Priority: optional
+Depends: aic8800-firmware (= ${binary:Version}),
+         ${misc:Depends},
+Conflicts: aic8800-dkms (<< 3.0+git20240116.ec460377-1),
+           aic8800-sdio-dkms,
+           aic8800-pcie-dkms,
+Description: dkms sources for Aicsemi aic8800 USB Wi-Fi driver
+ This package provides the dkms source code for Aicsemi
+ aic8800 USB Wi-Fi driver.
+
+Package: aic8800-firmware
+Architecture: all
+Section: misc
+Priority: optional
+Depends: ${misc:Depends},
+Recommends: usb-modeswitch,
+Description: Aicsemi aic8800 supplemental firmware
+ This package contains Aicsemi aic8800 firmware that are not
+ shipped by Debian.

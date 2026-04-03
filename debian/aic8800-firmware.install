@@ -1,0 +1,3 @@
+fw/* /usr/lib/firmware/
+aic.rules /usr/lib/udev/rules.d/
+usb_modeswitch/1111_1111 /etc/usb_modeswitch.d/1111:1111

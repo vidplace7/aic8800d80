@@ -1,0 +1,25 @@
+{
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "github.vscode-github-actions",
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.makefile-tools"
+      ]
+    }
+  },
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "workspaceMount": "source=${localWorkspaceFolder}/..,target=/workspaces,type=bind,consistency=cached",
+  "runArgs": [
+    // https://github.com/moby/moby/issues/27195#issuecomment-1410745778
+    "--ulimit", "nofile=1024:524288"
+  ],
+  "overrideCommand": true,
+  "updateContentCommand": "make pre_build"
+}

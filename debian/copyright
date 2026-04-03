@@ -1,0 +1,16 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: aic8800d80
+Source: https://github.com/shenmintao/aic8800d80
+
+Files: *
+Copyright: © 2026 Shen Mintao
+License: GPL-3+
+
+Files: drivers/*
+License: GPL-2
+
+License: GPL-2
+License-Reference: /usr/share/common-licenses/GPL-2
+
+License: GPL-3+
+License-Reference: /usr/share/common-licenses/GPL-3

@@ -1,0 +1,5 @@
+aic8800 (5.0+git-1) UNRELEASED; urgency=medium
+
+  * Initial Debian packaging.
+
+ -- "Austin Lane" <vidplace7@gmail.com>  Fri, 03 Apr 2026 01:18:38 +0000
